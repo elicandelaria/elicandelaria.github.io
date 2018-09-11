@@ -1,0 +1,175 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+*/
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  font-size: 20px;
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500px;
+}
+a {
+  color: #191970;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: hidden;
+}
+
+/* Download Button
+-------------------------*/
+.btn {
+  text-decoration: none;
+  background: #484E56;
+  color: white;
+  padding: 10px;
+  display: inline;
+  position: absolute;
+}
+
+/* Header & Footer
+-------------------------*/
+header, footer {
+    background: #8D99AE;
+}
+
+/* header */
+header {
+    padding-top: 50px;
+    margin: 0;
+}
+header h1, header h2 {
+    margin: 0;
+}
+.profile-img {
+    border-radius: 50%;
+    padding-right: 30px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
+.contact-info {
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Navigation
+-------------------------*/
+nav {
+    text-align: center;
+    background: #B0C4DE;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* About
+-------------------------*/
+.about-description {
+    float: right;
+    width: 50%;
+}
+
+/* Background Photo
+-------------------------*/
+.background-photo {
+    background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+              url(entrance.jpg) no-repeat fixed; 
+    background-size: cover;
+}
+
+/* Education
+-------------------------*/
+.education {
+    background: #86B8F2;
+}
+
+/* Technical Skills
+-------------------------*/
+ul.list li {
+    display: inline;
+}
+
+
+/* Involvement
+-------------------------*/
+.involvement {
+    background: #000080;
+    color: #E1E0E0;
+}
+h3 ~ p {
+    margin-top: 0;
+}
+.role-description {
+    margin-bottom: 75px;
+}
+.role-description p:first-of-type {
+    margin-top: 0;
+}
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 50%;
+    float: left;
+    color: #E1E0E0;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    color: #E1E0E0;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
+
+
